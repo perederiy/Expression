@@ -11,6 +11,10 @@ public class FunctionTest {
 		Function function = new Function();
 		int result = function.getFunction();
 		assertEquals(8, result);
+		assertFalse(result == 7);
+		assertFalse(result == 9);
+		assertTrue(result != 3);
+		assertNotEquals(7, result);
 	}
 
 }
